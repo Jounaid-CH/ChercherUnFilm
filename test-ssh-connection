@@ -9,9 +9,9 @@ test-ssh-connection:
     - mkdir -p ~/.ssh
     - echo "$SSH_PRIVATE_KEY" > ~/.ssh/cle.pem
     - chmod 600 ~/.ssh/cle.pem
-    - ssh-keyscan ec2-13-39-21-122.eu-west-3.compute.amazonaws.com >> ~/.ssh/known_hosts
+    - ssh-keyscan ec2-***-***-***-***.eu-west-3.compute.amazonaws.com >> ~/.ssh/known_hosts
     - ls -l ~/.ssh
     - cat ~/.ssh/cle.pem | head -n 5
   script:
     - echo "Test SSH vers EC2..."
-    - ssh -i ~/.ssh/cle.pem ec2-user@ec2-13-39-21-122.eu-west-3.compute.amazonaws.com 'echo "Hello depuis EC2" > /home/ec2-user/output.txt'
+    - ssh -i ~/.ssh/cle.pem ec2-user@ec2-***-***-***-***.eu-west-3.compute.amazonaws.com 'echo "Hello depuis EC2" > /home/ec2-user/output.txt'
