@@ -22,7 +22,7 @@ cd /var/www/html
 rm -f index.html
 
 # Clone le repo GitHub
-git clone https://github.com/Jounaid-CH/ChercheUnFilm.git
+git clone https://github.com/Jounaid-CH/ChercherUnFilm.git
 
 # Déplace le fichier PHP à la racine du serveur web
 cp ChercheUnFilm/index.php /var/www/html/
